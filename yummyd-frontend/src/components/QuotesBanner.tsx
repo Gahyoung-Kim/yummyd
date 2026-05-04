@@ -1,12 +1,12 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
-// 강사 이미지 자산 임포트
-import teacherKang from '../assets/teacher_강예진.png';
-import teacherKim from '../assets/teacher_김민수.png';
-import teacherPark from '../assets/teacher_박병관.png';
-import teacherJung from '../assets/teacher_정형.png';
-import teacherKwon from '../assets/teacher_권승호.png';
+// 강사 이미지 자산 경로 (public 폴더 내 영어 파일명 사용)
+const teacherKang = '/teacher/teacher_kang.png';
+const teacherKim = '/teacher/teacher_kim.png';
+const teacherPark = '/teacher/teacher_park.png';
+const teacherJung = '/teacher/teacher_jung.png';
+const teacherKwon = '/teacher/teacher_kwon.png';
 
 interface BannerConfig {
   tag: string;

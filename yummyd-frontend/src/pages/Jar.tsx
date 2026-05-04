@@ -450,7 +450,7 @@ export default function Jar() {
               {currentAvatar?.video_url ? (
                 <video src={currentAvatar.video_url} autoPlay loop muted playsInline className="w-full h-full object-cover" />
               ) : (
-                <img src={currentAvatar?.image_url || "/src/assets/yummyd_character_pure.png"} alt="Avatar" className="w-full h-full object-contain drop-shadow-lg" />
+                <img src={currentAvatar?.image_url || "/yummyd_character_pure.png"} alt="Avatar" className="w-full h-full object-contain drop-shadow-lg" />
               )}
             </div>
             <motion.button
