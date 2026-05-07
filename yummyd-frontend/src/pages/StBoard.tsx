@@ -198,7 +198,7 @@ export default function StBoard() {
     }
     setPosts([]);
 
-    const socket = io('http://localhost:5000', { transports: ['websocket'] });
+    const socket = io('/', { path: '/socket.io', transports: ['websocket'] });
     socketRef.current = socket;
 
     socket.on('connect', () => {

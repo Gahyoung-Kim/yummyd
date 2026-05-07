@@ -6,7 +6,7 @@ import { useStore } from '../store/useStore';
 import { io } from 'socket.io-client';
 import logo from '../assets/YummyD_logo.png';
 
-const BACKEND_URL = 'http://localhost:5000';
+const BACKEND_URL = ''; // NCP 클라우드 배포 시 상대 경로 사용 (Nginx 프록시 설정 필요)
 
 export default function YummyChat() {
   const { user } = useStore();
